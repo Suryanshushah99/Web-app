@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+let port= process.env.PORT;
 
 const app = express();
 
@@ -194,6 +195,6 @@ app.post("/delete", function(req, res) {
 
 
 
-app.listen(3000, function() {
+app.listen(port||3000, function() {
   console.log("Server started on port 3000");
 });
