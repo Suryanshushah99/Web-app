@@ -1,0 +1,13 @@
+<%- include("header") -%>
+
+<ul style="list-style-type:none ;text-align:center">
+<li><h1 id="heading" class="box">Open</h1>
+</li>
+
+<%  newListItems.forEach(function(item){ %>
+<li><a class="dropdown-item opena box " href="/<%=item.name%>"><%=item.name%></a></li>
+  <%  }) %>
+
+  </ul>
+
+<%- include("footer") -%>
