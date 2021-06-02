@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 mongoose.connect("mongodb+srv://admin-suryanshu:mydidig399@cluster0.ctny6.mongodb.net/tododb", {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+ useUnifiedTopology: true 
 });
 
 const itemsSchema = {
